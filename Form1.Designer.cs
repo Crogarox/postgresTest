@@ -33,6 +33,8 @@ namespace postgresTest
             this.txConnection = new System.Windows.Forms.TextBox();
             this.rtbSqlOutput = new System.Windows.Forms.RichTextBox();
             this.txSqlQuery = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSQL
@@ -69,17 +71,27 @@ namespace postgresTest
             this.txSqlQuery.TabIndex = 3;
             this.txSqlQuery.Text = "SELECT version()";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 64);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(345, 345);
+            this.dataGridView1.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txSqlQuery);
             this.Controls.Add(this.rtbSqlOutput);
             this.Controls.Add(this.txConnection);
             this.Controls.Add(this.btnSQL);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -91,6 +103,7 @@ namespace postgresTest
         private System.Windows.Forms.TextBox txConnection;
         private System.Windows.Forms.RichTextBox rtbSqlOutput;
         private System.Windows.Forms.TextBox txSqlQuery;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
